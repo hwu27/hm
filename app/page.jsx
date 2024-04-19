@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Engine, Render, Composite, Bodies, Runner } from 'matter-js';
 import { FaArrowDown  } from "react-icons/fa";
+import Modal from 'react-modal';
 
 function Page() {
     const [isNavbarOpen, setNavbarOpen] = React.useState(false);
@@ -201,13 +202,23 @@ function Page() {
 
     const [isVisible, setIsVisible] = useState({});
     
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleImageClick = () => {
+      setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    };
+
     return (
         <>  
             {/* Landing page*/}
             {showLanding && <div id="landing">
                     <header className="text-6xl select-none text-center bg-gradient-to-r from-orange-200 to-orange-100 text-gray-700 flex justify-center items-center h-screen">
                         <div className="space-y-4">
-                            <button className="flex hover:bg-orange-100 rounded-lg p-10 font-bold" onClick={ toggleCurtainResume }> The important stuff </button>
+                            <button className="flex hover:bg-orange-100 rounded-lg p-10 font-bold" onClick={ toggleCurtainResume }> Resume/Projects </button>
                             <p>or</p>
                             <button className="flex justify-center hover:bg-orange-100 rounded-lg p-10 text-4xl w-full" onClick={ toggleCurtainWAI }>Quick: Who am I?</button>
                         </div>
@@ -399,7 +410,7 @@ function Page() {
                         {/* Row 1 */}
                         <div className="flex flex-row space-x-4 ml-4 mr-4 text-xl">
                             <div id="portfolio" className="w-1/3">
-                                <a href="project-portfolio">
+                                <a href="https://github.com/hwu27/hm" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
                                         Portfolio Website
                                     </div>
@@ -409,7 +420,7 @@ function Page() {
                                 </a>
                             </div>
                             <div id="rltree" className="w-1/3">
-                                <a href="project-rltree">
+                                <a href="https://github.com/hwu27/rl_tree" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
                                         RL Tree
                                     </div>
@@ -419,7 +430,7 @@ function Page() {
                                 </a>
                             </div>
                             <div id="pima" className="w-1/3">
-                                <a href="project-pima">
+                                <a href="https://github.com/hwu27/diabetes-mlpipeline" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
                                         Pima Indians Diabetes Prediction
                                     </div>
@@ -432,7 +443,7 @@ function Page() {
                         {/* Row 2 */}
                         <div className="flex flex-row space-x-4 ml-4 mr-4 mt-10 text-xl">
                             <div id="robocup" className="w-1/3">
-                                <a href="project-robocup">
+                                <a href="https://github.com/hwu27/robocup/tree/main" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
                                         RoboCup SSL
                                     </div>
@@ -442,7 +453,7 @@ function Page() {
                                 </a>
                             </div>
                             <div id="mlproj" className="w-1/3">
-                                <a href="project-mlproj">
+                                <a href="https://github.com/hwu27/mlproj" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
                                         mlproj
                                     </div>
@@ -452,7 +463,7 @@ function Page() {
                                 </a>
                             </div>
                             <div id="ailand" className="w-1/3">
-                                <a href="project-ailand">
+                                <a href="https://github.com/hwu27/Ailand-Personal" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
                                         AiLand
                                     </div> 
@@ -471,8 +482,26 @@ function Page() {
                         </div>
                     </div>
                     <div className="m-10 mb-0 font-bold text-5xl">
-                        <img className="p-5 mx-auto" src="./images/resume.png"></img>
+                        <img className="p-5 mx-auto" src="./images/resume.png" onClick={handleImageClick}></img>
                     </div>
+                    <Modal
+                        isOpen={isModalOpen}
+                        onRequestClose={ handleCloseModal }
+                        style={{
+                        overlay: {
+                            backgroundColor: "rgba(0, 0, 0, 0.5)",
+                        },
+                        content: {
+                            border: "none",
+                            overflow: "auto",
+                        },
+                        }}
+                    >
+                        <img
+                        src="./images/resume.png"
+                        style={{ width: "125%", height: "125%", objectFit: "contain" }}
+                        />
+                    </Modal>
                 </div>
                 {/* Contact */}
                 <footer id="contact-resume" className="text-center px-4 py-1 text-sm bg-orange-50">
