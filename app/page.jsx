@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Engine, Render, Composite, Bodies, Runner } from 'matter-js';
 import { FaArrowDown  } from "react-icons/fa";
-import { Modal } from 'react-modal';
+import Modal from 'react-modal';
 
 function Page() {
     const [isNavbarOpen, setNavbarOpen] = React.useState(false);
