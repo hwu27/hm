@@ -443,7 +443,7 @@ function Page() {
                         {/* Row 2 */}
                         <div className="flex flex-row space-x-4 ml-4 mr-4 mt-10 text-xl">
                             <div id="robocup" className="w-1/3">
-                                <a href="https://github.com/hwu27/robocup/tree/main" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/hwu27/robocup-test" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
                                         RoboCup SSL
                                     </div>
