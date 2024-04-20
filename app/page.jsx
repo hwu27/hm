@@ -388,19 +388,20 @@ function Page() {
                     </nav>
                 </div>
                 <div id="main-resume" className="flex flex-row bg-gradient-to-r from-orange-200 to-orange-100 h-screen-100">
-                    <div className="flex flex-col w-1/3 bg-orange-50 h-screen-85 m-5 rounded-lg shadow-xl">
+                    <div className="flex flex-col w-1/3 bg-orange-50 h-screen-85 m-5 rounded-lg shadow-xl hidden lg:block">
 
-                        <img className="h-1/2 mx-auto mt-5 rounded-lg" src="./images/me.png"></img> 
-
+                        <img className="h-1/2 mx-auto mt-5 rounded-lg" src="./images/me.png" alt="picture of me"></img> 
+                        
                         <div className="items-center text-center">
                             
                             <p className="font-bold text-2xl m-5">Hi, I&#39;m Huaming</p>
 
-                            <p className="font-bold flex items-center"><img className="h-7 m-2" src="./images/UCSD.png"></img>University of California San Diego</p>
+                            <p className="font-bold flex items-center"><img className="h-7 m-2" src="./images/UCSD.png" alt="UCSD icon"></img>University of California San Diego</p>
 
                             <p className="m-2"><span className="font-bold">Major: </span>Cognitive Science with a Specialization in Machine Learning and Neural Computation</p>
 
                             <p className="m-2"><span className="font-bold">Minor: </span>Computer Science</p>
+            
                         </div>
                     </div>
                     <div className="flex flex-col bg-orange-50 m-5 w-full rounded-lg shadow-xl overflow-auto">
@@ -415,7 +416,7 @@ function Page() {
                                         Portfolio Website
                                     </div>
                                     <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                        <img className="opacity-60 rounded-b-lg"src="./images/website.png"></img>
+                                        <img className="opacity-60 rounded-b-lg" src="./images/website.png" alt="picture of website code"></img>
                                     </div>
                                 </a>
                             </div>
@@ -425,7 +426,7 @@ function Page() {
                                         RL Tree
                                     </div>
                                     <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                        <img className="opacity-60 rounded-b-lg"src="./images/rltree.png"></img>
+                                        <img className="opacity-60 rounded-b-lg"src="./images/rltree.png" alt="picture of rl environment"></img>
                                     </div>
                                 </a>
                             </div>
@@ -435,7 +436,7 @@ function Page() {
                                         Pima Indians Diabetes Prediction
                                     </div>
                                     <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                        <img className="opacity-60 rounded-b-lg"src="./images/pima.png"></img>
+                                        <img className="opacity-60 rounded-b-lg"src="./images/pima.png" alt="picture of pima indians diabetes dataset"></img>
                                     </div>
                                 </a>
                             </div>
@@ -448,7 +449,7 @@ function Page() {
                                         RoboCup SSL
                                     </div>
                                     <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                        <img className="opacity-60 rounded-b-lg"src="./images/robocup.png"></img>
+                                        <img className="opacity-60 rounded-b-lg"src="./images/robocup.png" alt="picture of robocup environment"></img>
                                     </div>
                                 </a>
                             </div>
@@ -458,7 +459,7 @@ function Page() {
                                         mlproj
                                     </div>
                                     <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                        <img className="opacity-60 rounded-b-lg"src="./images/mlproj.png"></img>
+                                        <img className="opacity-60 rounded-b-lg"src="./images/mlproj.png" alt="picture of mlproj landing page"></img>
                                     </div>
                                 </a>
                             </div>
@@ -468,7 +469,7 @@ function Page() {
                                         AiLand
                                     </div> 
                                     <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                        <img className="opacity-60 rounded-b-lg mx-auto" src="./images/ailand.png"></img>
+                                        <img className="opacity-60 rounded-b-lg mx-auto" src="./images/ailand.png" alt="picture of a tile block that I am very proud of"></img>
                                     </div>
                                 </a>
                             </div>
@@ -482,7 +483,7 @@ function Page() {
                         </div>
                     </div>
                     <div className="m-10 mb-0 font-bold text-5xl">
-                        <img className="p-5 mx-auto" src="./images/resume.png" onClick={handleImageClick}></img>
+                        <img className="p-5 mx-auto" src="./images/resume.png" onClick={handleImageClick} alt="picture of resume"></img>
                     </div>
                     <Modal
                         isOpen={isModalOpen}
@@ -498,8 +499,9 @@ function Page() {
                         }}
                     >
                         <img
-                        src="./images/resume.png"
-                        style={{ width: "125%", height: "125%", objectFit: "contain" }}
+                        src = "./images/resume.png"
+                        style = {{ width: "250%", height: "250%", objectFit: "contain" }}
+                        alt = "picture of resume zoomed in"
                         />
                     </Modal>
                 </div>
