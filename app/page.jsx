@@ -409,7 +409,7 @@ function Page() {
                             Projects
                         </div>
                         {/* Row 1 */}
-                        <div className="flex flex-row space-x-4 ml-4 mr-4 text-xl">
+                        <div className="flex flex-row space-x-4 mx-4 mb-4 text-xl">
                             <div id="portfolio" className="w-1/3">
                                 <a href="https://github.com/hwu27/hm" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
@@ -430,19 +430,19 @@ function Page() {
                                     </div>
                                 </a>
                             </div>
-                            <div id="pima" className="w-1/3">
-                                <a href="https://github.com/hwu27/diabetes-mlpipeline" target="_blank" rel="noopener noreferrer">
+                            <div id="financial-nlp" className="w-1/3">
+                                <a href="https://github.com/hwu27/financial-sentiment-nlp" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
-                                        Pima Indians Diabetes Prediction
+                                        Financial Sentiment Analysis NLP
                                     </div>
                                     <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                        <img className="opacity-60 rounded-b-lg"src="./images/pima.png" alt="picture of pima indians diabetes dataset"></img>
+                                        <img className="opacity-60 rounded-b-lg"src="./images/huggingface.png" alt="picture of Hugging Face"></img>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         {/* Row 2 */}
-                        <div className="flex flex-row space-x-4 ml-4 mr-4 mt-10 text-xl">
+                        <div className="flex flex-row space-x-4 mx-4 mb-4 text-xl">
                             <div id="robocup" className="w-1/3">
                                 <a href="https://github.com/hwu27/robocup-test" target="_blank" rel="noopener noreferrer">
                                     <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
@@ -470,6 +470,38 @@ function Page() {
                                     </div> 
                                     <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
                                         <img className="opacity-60 rounded-b-lg mx-auto" src="./images/ailand.png" alt="picture of a tile block that I am very proud of"></img>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="flex flex-row space-x-4 ml-4 mr-4 text-xl">
+                            <div id="portfolio" className="w-1/3">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
+                                        E-Commerce Management Backend for shoo & mimi
+                                    </div>
+                                    <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
+                                        <img className="opacity-60 rounded-b-lg" src="./images/shoomimi.png" alt="picture of shoo & mimi"></img>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="in-progress" className="w-1/3">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
+                                    Work in Progress
+                                    </div>
+                                    <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
+                                        <img className="opacity-60 rounded-b-lg"src="" alt="picture of rl environment"></img>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="pima" className="w-1/3">
+                                <a href="https://github.com/hwu27/diabetes-mlpipeline" target="_blank" rel="noopener noreferrer">
+                                    <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
+                                        Pima Indians Diabetes Prediction
+                                    </div>
+                                    <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
+                                        <img className="opacity-60 rounded-b-lg"src="./images/pima.png" alt="picture of pima indians diabetes dataset"></img>
                                     </div>
                                 </a>
                             </div>
