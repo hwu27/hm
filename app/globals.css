@@ -13,3 +13,19 @@ body {
     font-family: "Source Code Pro", monospace !important;
 }
 
+
+.fadeIn {
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+    animation: fadeIn 0.75s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
