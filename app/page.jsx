@@ -215,11 +215,11 @@ function Page() {
             {/* Landing page*/}
             <section id="landing-page">
                 {showLanding && <div id="landing">
-                        <header className="text-6xl select-none text-center bg-gradient-to-r from-orange-200 to-orange-100 text-gray-700 flex justify-center items-center h-screen w-screen">
+                        <header className="text-2xl sm:text-6xl select-none text-center bg-gradient-to-r from-orange-200 to-orange-100 text-gray-700 flex justify-center items-center h-screen w-screen">
                             <div className="space-y-4">
                                 <button className="flex hover:bg-orange-100 rounded-lg p-10 font-bold" onClick={ toggleCurtainResume }> Resume/Projects </button>
                                 <p>or</p>
-                                <button className="flex justify-center hover:bg-orange-100 rounded-lg p-10 text-4xl w-full" onClick={ toggleCurtainWAI }>Quick: Who am I?</button>
+                                <button className="flex justify-center hover:bg-orange-100 rounded-lg p-10 text-xl sm:text-4xl w-full" onClick={ toggleCurtainWAI }>Quick: Who am I?</button>
                             </div>
                         </header> 
                 </div>}
