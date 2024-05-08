@@ -82,8 +82,10 @@ function Page() {
     const [showMain, setMain] = useState(false);
 
     const toggleCurtainWAI = () => {
+        if (isNavbarOpen)
+            setNavbarOpen(false);
         setCurtainUpWAI(false);
-    
+        
         setTimeout(() => {
             setShowLanding(false);
             setShowContactResume(false);
@@ -97,6 +99,8 @@ function Page() {
     const [showContactResume, setShowContactResume] = useState(false);
 
     const toggleCurtainResume = () => {
+        if (isNavbarOpen)
+            setNavbarOpen(false);
         setCurtainUpResume(false);
 
         setTimeout(() => {
@@ -110,6 +114,8 @@ function Page() {
 
     const [isCurtainUpReset, setCurtainUpReset] = useState(true);
     const toggleReset = () => {
+        if (isNavbarOpen)
+            setNavbarOpen(false);
         setCurtainUpReset(false);
         setTimeout(() => {
             setShowLanding(true);
@@ -186,12 +192,16 @@ function Page() {
     }, [isCurtainUpWAI]); 
 
     const handleCrossClickFromResume = (location) => {
+        if (isNavbarOpen)
+            setNavbarOpen(false);
         toggleCurtainWAI();
         setTimeout(() => {
           window.location.hash = location;
         }, 1050); 
     };
     const handleCrossClickFromAbout = (location) => {
+        if (isNavbarOpen)
+            setNavbarOpen(false);
         toggleCurtainResume();
         setTimeout(() => {
           window.location.hash = location;
@@ -241,9 +251,9 @@ function Page() {
                         </ul>
 
                         {/* Navbar minimized*/}
-                        <button className="block text-gray-700 font-bold text-4xl md:hidden m-auto px-10 pb-2 hover:bg-gray-200" onClick={ navbarClick }>≡</button>
-                        <nav className={`${isNavbarOpen ? 'block' : 'hidden'} md:hidden`}>
-                            <ul className="flex flex-col items-center text-4xl list-none m-0 p-0">
+                        <button className="block text-gray-700 font-bold text-2xl md:hidden m-auto px-10 pb-2 w-full hover:bg-gray-200 bg-orange-50" onClick={ navbarClick }>≡</button>
+                        <nav className={`${isNavbarOpen ? 'block' : 'hidden'} md:hidden bg-orange-50`}>
+                            <ul className="flex flex-col items-center text-2xl list-none m-0 p-0 bg-orange-50">
                                 <li><a className="hover:bg-gray-200" onClick={ toggleReset } href="#">Home</a></li>
                                 <li><a className="hover:bg-gray-200" href="#about">About</a></li>
                                 <li><a className="hover:bg-gray-200" href="#projects" onClick={ () => handleCrossClickFromAbout("projects")}>Projects</a></li>
@@ -282,7 +292,7 @@ function Page() {
                     </div>
                     {/* About me */}
                     <div id="about" className="bg-orange-50 pt-10 pb-32">
-                        <div className="text-5xl p-10 pb-20">
+                        <div className="text-5xl p-5 pb-20">
                             Here&#39;s a summary.
                         </div>
                                 
@@ -379,9 +389,9 @@ function Page() {
                         </ul>
 
                         {/* Navbar minimized*/}
-                        <button className="block text-gray-700 font-bold text-4xl md:hidden m-auto px-10 pb-2 hover:bg-gray-200" onClick={ navbarClick }>≡</button>
-                        <nav className={`${isNavbarOpen ? 'block' : 'hidden'} md:hidden`}>
-                            <ul className="flex flex-col items-center text-4xl list-none m-0 p-0">
+                        <button className="block text-gray-700 font-bold text-4xl md:hidden m-auto px-10 pb-2 w-full hover:bg-gray-200 bg-orange-50" onClick={ navbarClick }>≡</button>
+                        <nav className={`${isNavbarOpen ? 'block' : 'hidden'} md:hidden bg-orange-50`}>
+                            <ul className="flex flex-col items-center text-2xl list-none m-0 p-0 bg-orange-50">
                                 <li><a className="hover:bg-gray-200" onClick={ toggleReset } href="#">Home</a></li>
                                 <li><a className="hover:bg-gray-200" onClick={ () => handleCrossClickFromResume("about") } href="#about">About</a></li>
                                 <li><a className="hover:bg-gray-200" href="#projects">Projects</a></li>
