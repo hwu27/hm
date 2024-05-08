@@ -425,7 +425,7 @@ function Page() {
                                 Projects
                             </div>
                             {/* Row 1 */}
-                            <div className="flex flex-col md:flex-row md:space-x-4 mx-4 mb-4 text-xl justify-center items-center">
+                            <div className="flex flex-col md:flex-row md:space-x-4 mx-4 mb-4 text-xl">
                                 <div id="portfolio" className="w-full mb-5 md:mb-0 md:w-1/3">
                                     <a href="https://github.com/hwu27/hm" target="_blank" rel="noopener noreferrer">
                                         <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
