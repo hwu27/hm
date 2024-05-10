@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Engine, Render, Composite, Bodies, Runner } from 'matter-js';
 import { FaArrowDown  } from "react-icons/fa";
+import { CiMedicalCase } from "react-icons/ci";
 import Modal from 'react-modal';
 
 function Page() {
@@ -501,13 +502,13 @@ function Page() {
                                         </div>
                                     </a>
                                 </div>
-                                <div id="in-progress" className="w-full mb-5 md:mb-0 md:w-1/3">
-                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                <div id="mediresponse" className="w-full mb-5 md:mb-0 md:w-1/3">
+                                    <a href="https://github.com/hwu27/mediresponse" target="_blank" rel="noopener noreferrer">
                                         <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
-                                        Work in Progress
+                                        MediResponse: The Emotional Medical Chatbot
                                         </div>
                                         <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                            <img className="opacity-60 rounded-b-lg mx-auto"src="" alt="picture of rl environment"></img>
+                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/react_medical.png" alt="picture of medical icon"></img>
                                         </div>
                                     </a>
                                 </div>
