@@ -532,17 +532,17 @@ function Page() {
                                             Data Synthesizer
                                         </div>
                                         <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                            <img className="opacity-60 rounded-b-lg mx-auto" src="./images/data.png" alt="work in progress"></img>
+                                            <img className="opacity-60 rounded-b-lg mx-auto" src="./images/data.png" alt="random lines of data"></img>
                                         </div>
                                     </a>
                                 </div>
-                                <div id="work-in-progress" className="w-full mb-5 md:mb-0 md:w-1/3">
-                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                <div id="apartment finder" className="w-full mb-5 md:mb-0 md:w-1/3">
+                                    <a href="https://github.com/hwu27/apartment_finder/tree/main" target="_blank" rel="noopener noreferrer">
                                         <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
-                                        Work in Progress
+                                        Apartment Finder using Google Cloud
                                         </div>
                                         <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                            <img className="opacity-60 rounded-b-lg mx-auto"src="" alt="work in progress"></img>
+                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/cloud.png" alt="google cloud icon"></img>
                                         </div>
                                     </a>
                                 </div>
