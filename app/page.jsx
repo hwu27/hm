@@ -437,13 +437,13 @@ function Page() {
                                         </div>
                                     </a>
                                 </div>
-                                <div id="rltree" className="w-full mb-5 md:mb-0 md:w-1/3">
-                                    <a href="https://github.com/hwu27/rl_tree" target="_blank" rel="noopener noreferrer">
+                                <div id="mediresponse" className="w-full mb-5 md:mb-0 md:w-1/3">
+                                    <a href="https://github.com/hwu27/mediresponse-personal" target="_blank" rel="noopener noreferrer">
                                         <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
-                                            RL Tree
+                                        MediResponse: The Emotional Medical Chatbot
                                         </div>
                                         <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/rltree.png" alt="picture of rl environment"></img>
+                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/react_medical.png" alt="picture of medical icon"></img>
                                         </div>
                                     </a>
                                 </div>
@@ -459,14 +459,15 @@ function Page() {
                                 </div>
                             </div>
                             {/* Row 2 */}
+                            
                             <div className="flex flex-col md:flex-row md:space-x-4 mx-4 mb-4 text-xl">
-                                <div id="robocup" className="w-full mb-5 md:mb-0 md:w-1/3">
-                                    <a href="https://github.com/hwu27/robocup-test" target="_blank" rel="noopener noreferrer">
+                                <div id="ecommerce-backend" className="w-full mb-5 md:mb-0 md:w-1/3">
+                                    <a href="https://github.com/hwu27/ecommerce-backend" target="_blank" rel="noopener noreferrer">
                                         <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
-                                            RoboCup SSL
+                                            E-Commerce Backend 
                                         </div>
                                         <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/robocup.png" alt="picture of robocup environment"></img>
+                                            <img className="opacity-60 rounded-b-lg mx-auto" src="./images/shoomimi.png" alt="picture of shoo & mimi"></img>
                                         </div>
                                     </a>
                                 </div>
@@ -480,36 +481,36 @@ function Page() {
                                         </div>
                                     </a>
                                 </div>
-                                <div id="ailand" className="w-full mb-5 md:mb-0 md:w-1/3">
-                                    <a href="https://github.com/hwu27/Ailand-Personal" target="_blank" rel="noopener noreferrer">
+                                <div id="apartment finder" className="w-full mb-5 md:mb-0 md:w-1/3">
+                                    <a href="https://github.com/hwu27/apartment_finder/tree/main" target="_blank" rel="noopener noreferrer">
                                         <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
-                                            AiLand
-                                        </div> 
+                                        Apartment Finder using Google Cloud
+                                        </div>
                                         <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                            <img className="opacity-60 rounded-b-lg mx-auto" src="./images/ailand.png" alt="picture of a tile block that I am very proud of"></img>
+                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/cloud.png" alt="google cloud icon"></img>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                             {/* Row 3 */}
                             <div className="flex flex-col md:flex-row md:space-x-4 ml-4 mr-4 mb-4 text-xl">
-                                <div id="ecommerce-backend" className="w-full mb-5 md:mb-0 md:w-1/3">
-                                    <a href="https://github.com/hwu27/ecommerce-backend" target="_blank" rel="noopener noreferrer">
+                                <div id="robocup" className="w-full mb-5 md:mb-0 md:w-1/3">
+                                    <a href="https://github.com/hwu27/robocup-test" target="_blank" rel="noopener noreferrer">
                                         <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
-                                            E-Commerce Backend 
+                                            RoboCup SSL
                                         </div>
                                         <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                            <img className="opacity-60 rounded-b-lg mx-auto" src="./images/shoomimi.png" alt="picture of shoo & mimi"></img>
+                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/robocup.png" alt="picture of robocup environment"></img>
                                         </div>
                                     </a>
                                 </div>
-                                <div id="mediresponse" className="w-full mb-5 md:mb-0 md:w-1/3">
-                                    <a href="https://github.com/hwu27/mediresponse" target="_blank" rel="noopener noreferrer">
+                                <div id="rltree" className="w-full mb-5 md:mb-0 md:w-1/3">
+                                    <a href="https://github.com/hwu27/rl_tree" target="_blank" rel="noopener noreferrer">
                                         <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
-                                        MediResponse: The Emotional Medical Chatbot (WIP)
+                                            RL Tree
                                         </div>
                                         <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/react_medical.png" alt="picture of medical icon"></img>
+                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/rltree.png" alt="picture of rl environment"></img>
                                         </div>
                                     </a>
                                 </div>
@@ -536,13 +537,13 @@ function Page() {
                                         </div>
                                     </a>
                                 </div>
-                                <div id="apartment finder" className="w-full mb-5 md:mb-0 md:w-1/3">
-                                    <a href="https://github.com/hwu27/apartment_finder/tree/main" target="_blank" rel="noopener noreferrer">
+                                <div id="ailand" className="w-full mb-5 md:mb-0 md:w-1/3">
+                                    <a href="https://github.com/hwu27/Ailand-Personal" target="_blank" rel="noopener noreferrer">
                                         <div className="text-center bg-orange-300 shadow-xl rounded-t-lg p-1">
-                                        Apartment Finder using Google Cloud
-                                        </div>
+                                            AiLand
+                                        </div> 
                                         <div className="text-center bg-orange-200 shadow-xl rounded-b-lg hover:bg-gray-200">
-                                            <img className="opacity-60 rounded-b-lg mx-auto"src="./images/cloud.png" alt="google cloud icon"></img>
+                                            <img className="opacity-60 rounded-b-lg mx-auto" src="./images/ailand.png" alt="picture of a tile block that I am very proud of"></img>
                                         </div>
                                     </a>
                                 </div>
